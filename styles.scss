@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    body {
+        text-align: center;
+        #title {
+            background-color: gray;
+            h1 {
+                color: darkred;
+            }
+        }
+        #frame {
+            border: green 1px solid;
+            #one {
+                border: blue 1px solid;
+            }
+        }
+    }
+}

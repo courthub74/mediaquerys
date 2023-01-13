@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+* body {
+  text-align: center;
+}
+
+* body #title {
+  background-color: gray;
+}
+
+* body #title h1 {
+  color: darkred;
+}
+
+* body #frame {
+  border: green 1px solid;
+}
+
+* body #frame #one {
+  border: blue 1px solid;
+}
+/*# sourceMappingURL=styles.css.map */
