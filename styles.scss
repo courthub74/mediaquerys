@@ -2,6 +2,7 @@
     margin: 0;
     body {
         text-align: center;
+        // background-color: orange;
         #title {
             background-color: gray;
             h1 {
@@ -9,9 +10,28 @@
             }
         }
         #frame {
-            border: green 1px solid;
+            padding: 20px;
+            border: 2px solid;
+            width: 50%;
             #one {
                 border: blue 1px solid;
+                width: 50%;
+                height: 100px;
+            }
+            #two {
+                border: red 1px solid;
+                width: 50%;
+                height: 100px;
+            }
+            #three {
+                border: darkmagenta 1px solid;
+                width: 50%;
+                height: 100px;
+            }
+            #four {
+                border: green 1px solid;
+                width: 50%;
+                height: 100px;
             }
         }
     }

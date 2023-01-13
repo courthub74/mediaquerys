@@ -15,10 +15,32 @@
 }
 
 * body #frame {
-  border: green 1px solid;
+  padding: 20px;
+  border: 2px solid;
+  width: 50%;
 }
 
 * body #frame #one {
   border: blue 1px solid;
+  width: 50%;
+  height: 100px;
+}
+
+* body #frame #two {
+  border: red 1px solid;
+  width: 50%;
+  height: 100px;
+}
+
+* body #frame #three {
+  border: darkmagenta 1px solid;
+  width: 50%;
+  height: 100px;
+}
+
+* body #frame #four {
+  border: green 1px solid;
+  width: 50%;
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
