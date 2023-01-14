@@ -1,8 +1,10 @@
 * {
     margin: 0;
+    // TABLET
+    // if it's between 500 - 1000px
     body {
         text-align: center;
-        // background-color: orange;
+        background-color: black;
         #title {
             background-color: gray;
             h1 {
@@ -11,38 +13,51 @@
         }
         #frame {
             padding: 20px;
-            border: 2px solid;
+            // border: 2px solid;
             #boxes {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
                 width: 100%;
-                // background-color: aquamarine;
-                #one {
-                    border: blue 2px solid;
+                .box {
+                    border: white 2px solid;
                     width: 50%;
                     height: 100px;
-                    margin: 10px auto;
-                    // margin-top: 0px;
+                    color: white;
+                    font-size: 5rem;
                 }
-                #two {
-                    border: red 2px solid;
-                    width: 50%;
-                    height: 100px;
-                }
-                #three {
-                    border: darkmagenta 2px solid;
-                    width: 50%;
-                    height: 100px;
-                }
-                #four {
-                    border: green 2px solid;
-                    width: 50%;
-                    height: 100px;
-                }
-                #five {
-                    border: orange 2px solid;
+            }
+        }
+    }
+}
+
+// SMART PHONE
+// IF it's 500px or smaller
+    // set the title to lightblue
+@media screen and (max-width: 500px) {
+    body {
+        #title {
+            background-color: lightblue;
+            h1 {
+                color: rgb(184, 21, 21);
+            }
+            p {
+                color: rgb(184, 21, 21);
+                font-size: x-large;
+            }
+        }
+        // NOW set the frame
+        #frame {
+            padding: 20px;
+            #boxes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                .box {
+                    border: white 2px solid;
                     width: 50%;
                     height: 100px;
                 }
@@ -51,27 +66,41 @@
     }
 }
 
-// IF smaller then 500px
-    // set the title color to lightgreen
-@media screen and (max-width: 500px) {
-    body {
-        #title {
-            background-color: lightgreen;
-        }
-    }
-}
 
-// IF it's 900px or larger 
-    // set the title to lightblue
-@media screen and (min-width: 900px) {
-    body {
-        #title {
-            background-color: lightblue;
-        }
-    }
-}
-
-// IF it's at least 2000px
+// DESKTOP
+// IF it's at least 1000px
     // Make the buttons appear side to side (flex)
+        // change the color to lightcoral
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: black;
+        #title {
+            background-color: rgb(184, 21, 21);
+            h1 {
+                color: lightblue;
+            }
+            p {
+                color: lightblue;
+                font-size: x-large;
+            }
+        }
+        // NOW set the frame
+        #frame {
+            padding: 20px;
+            #boxes {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                .box {
+                    border: white 2px solid;
+                    width: 50%;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
 
 
