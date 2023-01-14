@@ -1,46 +1,60 @@
 * {
   margin: 0;
 }
-
 * body {
   text-align: center;
 }
-
 * body #title {
   background-color: gray;
 }
-
 * body #title h1 {
   color: darkred;
 }
-
 * body #frame {
   padding: 20px;
   border: 2px solid;
-  width: 50%;
 }
-
-* body #frame #one {
-  border: blue 1px solid;
+* body #frame #boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+* body #frame #boxes #one {
+  border: blue 2px solid;
+  width: 50%;
+  height: 100px;
+  margin: 10px auto;
+}
+* body #frame #boxes #two {
+  border: red 2px solid;
+  width: 50%;
+  height: 100px;
+}
+* body #frame #boxes #three {
+  border: darkmagenta 2px solid;
+  width: 50%;
+  height: 100px;
+}
+* body #frame #boxes #four {
+  border: green 2px solid;
+  width: 50%;
+  height: 100px;
+}
+* body #frame #boxes #five {
+  border: orange 2px solid;
   width: 50%;
   height: 100px;
 }
 
-* body #frame #two {
-  border: red 1px solid;
-  width: 50%;
-  height: 100px;
+@media screen and (max-width: 500px) {
+  body #title {
+    background-color: lightgreen;
+  }
 }
-
-* body #frame #three {
-  border: darkmagenta 1px solid;
-  width: 50%;
-  height: 100px;
-}
-
-* body #frame #four {
-  border: green 1px solid;
-  width: 50%;
-  height: 100px;
-}
-/*# sourceMappingURL=styles.css.map */
+@media screen and (min-width: 900px) {
+  body #title {
+    background-color: lightblue;
+  }
+}/*# sourceMappingURL=styles.css.map */

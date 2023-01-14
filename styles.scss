@@ -12,27 +12,66 @@
         #frame {
             padding: 20px;
             border: 2px solid;
-            width: 50%;
-            #one {
-                border: blue 1px solid;
-                width: 50%;
-                height: 100px;
-            }
-            #two {
-                border: red 1px solid;
-                width: 50%;
-                height: 100px;
-            }
-            #three {
-                border: darkmagenta 1px solid;
-                width: 50%;
-                height: 100px;
-            }
-            #four {
-                border: green 1px solid;
-                width: 50%;
-                height: 100px;
+            #boxes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                // background-color: aquamarine;
+                #one {
+                    border: blue 2px solid;
+                    width: 50%;
+                    height: 100px;
+                    margin: 10px auto;
+                    // margin-top: 0px;
+                }
+                #two {
+                    border: red 2px solid;
+                    width: 50%;
+                    height: 100px;
+                }
+                #three {
+                    border: darkmagenta 2px solid;
+                    width: 50%;
+                    height: 100px;
+                }
+                #four {
+                    border: green 2px solid;
+                    width: 50%;
+                    height: 100px;
+                }
+                #five {
+                    border: orange 2px solid;
+                    width: 50%;
+                    height: 100px;
+                }
             }
         }
     }
 }
+
+// IF smaller then 500px
+    // set the title color to lightgreen
+@media screen and (max-width: 500px) {
+    body {
+        #title {
+            background-color: lightgreen;
+        }
+    }
+}
+
+// IF it's 900px or larger 
+    // set the title to lightblue
+@media screen and (min-width: 900px) {
+    body {
+        #title {
+            background-color: lightblue;
+        }
+    }
+}
+
+// IF it's at least 2000px
+    // Make the buttons appear side to side (flex)
+
+
