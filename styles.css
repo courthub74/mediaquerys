@@ -1,88 +1,33 @@
 * {
   margin: 0;
 }
-* body {
-  text-align: center;
-  background-color: black;
-}
-* body #title {
-  background-color: gray;
-}
-* body #title h1 {
-  color: darkred;
-}
-* body #frame {
-  padding: 20px;
-}
-* body #frame #boxes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-* body #frame #boxes .box {
-  border: white 2px solid;
-  width: 50%;
-  height: 100px;
-  color: white;
-  font-size: 5rem;
-}
-
 @media screen and (max-width: 500px) {
-  body #title {
+  * body {
+    text-align: center;
+    background-color: black;
+  }
+  * body #title {
     background-color: lightblue;
   }
-  body #title h1 {
-    color: rgb(184, 21, 21);
+  * body #title h1 {
+    color: darkred;
   }
-  body #title p {
-    color: rgb(184, 21, 21);
-    font-size: x-large;
-  }
-  body #frame {
+  * body #frame {
     padding: 20px;
+    width: 100%;
   }
-  body #frame #boxes {
+  * body #frame #boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     width: 100%;
   }
-  body #frame #boxes .box {
+  * body #frame #boxes .box {
     border: white 2px solid;
     width: 50%;
     height: 100px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    background-color: black;
-  }
-  body #title {
-    background-color: rgb(184, 21, 21);
-  }
-  body #title h1 {
-    color: lightblue;
-  }
-  body #title p {
-    color: lightblue;
-    font-size: x-large;
-  }
-  body #frame {
-    padding: 20px;
-  }
-  body #frame #boxes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-  body #frame #boxes .box {
-    border: white 2px solid;
-    width: 50%;
-    height: 100px;
+    color: white;
+    font-size: 5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,106 +1,50 @@
 * {
     margin: 0;
-    // TABLET
-    // if it's between 500 - 1000px
-    body {
-        text-align: center;
-        background-color: black;
-        #title {
-            background-color: gray;
-            h1 {
-                color: darkred;
+    // SMART PHONE
+    // IF it's 500px or smaller
+        // set the title to lightblue
+    @media screen and (max-width: 500px) {
+        body {
+            text-align: center;
+            background-color: black;
+            #title {
+                background-color: lightblue;
+                h1 {
+                    color: darkred;
+                }
             }
-        }
-        #frame {
-            padding: 20px;
-            // border: 2px solid;
-            #boxes {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
+            #frame {
+                padding: 20px;
                 width: 100%;
-                .box {
-                    border: white 2px solid;
-                    width: 50%;
-                    height: 100px;
-                    color: white;
-                    font-size: 5rem;
+                #boxes {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    .box {
+                        border: white 2px solid;
+                        width: 50%;
+                        height: 100px;
+                        color: white;
+                        font-size: 5rem;
+                    }
                 }
             }
         }
     }
-}
-
-// SMART PHONE
-// IF it's 500px or smaller
-    // set the title to lightblue
-@media screen and (max-width: 500px) {
-    body {
-        #title {
-            background-color: lightblue;
-            h1 {
-                color: rgb(184, 21, 21);
-            }
-            p {
-                color: rgb(184, 21, 21);
-                font-size: x-large;
-            }
-        }
-        // NOW set the frame
-        #frame {
-            padding: 20px;
-            #boxes {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                width: 100%;
-                .box {
-                    border: white 2px solid;
-                    width: 50%;
-                    height: 100px;
-                }
-            }
-        }
-    }
-}
 
 
-// DESKTOP
-// IF it's at least 1000px
-    // Make the buttons appear side to side (flex)
-        // change the color to lightcoral
-@media screen and (min-width: 1000px) {
-    body {
-        background-color: black;
-        #title {
-            background-color: rgb(184, 21, 21);
-            h1 {
-                color: lightblue;
-            }
-            p {
-                color: lightblue;
-                font-size: x-large;
-            }
-        }
-        // NOW set the frame
-        #frame {
-            padding: 20px;
-            #boxes {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-                width: 100%;
-                .box {
-                    border: white 2px solid;
-                    width: 50%;
-                    height: 100px;
-                }
-            }
-        }
-    }
+    // TABLET 
+    // IF it's greater than 500px and less than 1000px
+        // set the title to lightgreen
+
+
+    // DESKTOP
+    // IF it's at least 1000px
+        // Make the buttons appear side to side (flex)
+            // change the color to lightcoral
+
 }
 
 
