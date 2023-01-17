@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #F3F9FF;
+  height: 100vh;
+}
+* body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  border: 2px dotted black;
+}
+* body .container h1 {
+  color: #4375C0;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+}
+* body .container .page {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+* body .container .page .outline {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  padding: 40px;
+}
+* body .container .page .outline .zooms {
+  border: 1px dotted rosybrown;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 30px 0px 30px;
+  height: 550px;
+  overflow-y: scroll;
+}
+* body .container .page .outline .zooms #zoom_items {
+  background-color: #4375C0;
+  border-radius: 5px;
+  height: 100px;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container .page .outline .zooms #zoom_items #content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+}
+* body .container .page .outline .zooms #zoom_items #content input {
+  font-size: 1.4rem;
+  background-color: #4375C0;
+  border: none;
+  color: white;
+}
+* body .container .page .outline .zooms::-webkit-scrollbar {
+  border: 1px solid #4375C0;
+  border-radius: 10px;
+}
+* body .container .page .outline .zooms::-webkit-scrollbar-thumb {
+  background: #4375C0;
+  border: 1px #4375C0 solid;
+  border-radius: 10px;
+}
+* body .container .page .settings {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  padding-top: 10px;
+}
+* body .container .page a {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=zoomlist.css.map */
